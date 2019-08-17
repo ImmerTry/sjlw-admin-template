@@ -70,12 +70,12 @@ export const errorReq = () => {
     url: 'error_url',
     method: 'post'
   })
-};
+}
 
-export const saveErrorLogger = info => {
-  return axios.request({
-    url: '/logger',
-    data: info,
-    method: 'post'
-  })
-};
+// export const saveErrorLogger = info => {
+//   return axios.request({
+//     url: '/logger',
+//     data: info,
+//     method: 'post'
+//   })
+// };

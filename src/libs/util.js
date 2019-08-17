@@ -29,6 +29,7 @@ export const hasChild = (item) => {
 
 const showThisMenuEle = (item, access) => {
     if (item.meta && item.meta.access && item.meta.access.length) {
+      console.log(hasOneOf(item.meta.access, access))
         if (hasOneOf(item.meta.access, access)) return true;
         else return false
     } else return true

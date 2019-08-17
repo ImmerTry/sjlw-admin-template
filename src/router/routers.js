@@ -137,7 +137,7 @@ export default [
         path: '/back_stage',
         name: 'back_stage_management',
         meta: {
-          access: ['super_admin'],
+          // access: ['1'],
           icon: 'ios-contacts',
           title: '后台管理'
         },
@@ -168,7 +168,7 @@ export default [
             path: '/website_setup',
             name: 'website_setup',
             meta: {
-              access: ['super_admin'],
+              // access: ['1'],
               icon: 'md-funnel',
               title: '网站设置'
             },

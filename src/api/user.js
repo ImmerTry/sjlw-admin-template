@@ -7,7 +7,10 @@ export const login = ({userName, password}) => {
   };
   return axios.request({
     url: '/user/login',
-    data,
+    params: {
+      userName,
+      password
+    },
     method: 'post'
   })
 };
@@ -17,8 +20,10 @@ export const getUserInfo = (token) => {
     token
   };
   return axios.request({
-    url: '/user/paresToken',
-    data,
+    url: '/user/parseToken',
+    params: {
+      token
+    },
     method: 'post'
   })
 };
